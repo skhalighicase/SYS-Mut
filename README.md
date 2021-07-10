@@ -33,14 +33,14 @@ The script was developed on the R platform with version 3.4, and it is assumed t
  * [**R**](http://www.r-project.org/) : Free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms.
 <br> preferred Version : >= 3.4
 
-* [**JAGS**]JAGS: Just Another Gibbs Sampler (https://sourceforge.net/projects/mcmc-jags/) : It is a program for the statistical analysis of Bayesian hierarchical models by Markov Chain Monte Carlo.
-<br> preferred Version : >= 3.4
+* [**JAGS**] Just Another Gibbs Sampler (https://sourceforge.net/projects/mcmc-jags/) : It is a program for the statistical analysis of Bayesian hierarchical models by Markov Chain Monte Carlo.
+<br> 
 
 ________________________________________________________________
 ### Downloading SYS-Mut
 SYS-Mut can be downloaded from github by recursively cloning the git repository
    
-   $ git clone https://github.com/VaradanLab/SYS-Mut.git
+   $ git clone https://github.com/skhalighicase/SYS-Mut.git
    
 ### Preparing Data for the run
 
@@ -60,27 +60,16 @@ ________________________________________________________________
 ________________________________________________________________
 ### Running SYS-Mut
 
-You will need to run the "SYS-Mut.R" script included in the SYS-Mut package.
+You will need to run the "main file" script in each folder to run each step of the SYS-Mut
 
-    $ EXPORT num_of_cores==8 #User have to provide the number of cores available for the process. 
-    $ RScript SYS-Mut.R [-R] [location to SYS-Mut_PROJ_Config.txt]
 for help :
 
     $ RScript SYS-Mut.R [-H]
 
-To run SYS-Mut on HPC. Slurm Script should look the following. 
+A HPC version of the SYS-Mut model is provided. To run SYS-Mut on HPC a sample Slurm Script is created.
 
-________________________________________________________________
-    #SBATCH -J SYS-Mut_Job
-    #SBATCH --nodes=1
-    #SBATCH --cpus-per-task=8
-    #SBATCH --output=RD_1ST.out
-    #SBATCH --mem=20gb
-
-    module load gcc
-    export Number_of_Cores==cpus-per-task
-    RScript SYS-Mut.R [-R] [location to SYS-Mut_PROJ_Config.txt]
+    
 
 _________________________________________________________________
-### For any queries kindly mail us at varadanlab@gmail.com
+### For any queries kindly mail us at varadanlab@gmail.com, skhalighi@gmail.com
 
