@@ -33,7 +33,7 @@ The script was developed on the R platform with version 3.4, and it is assumed t
  * [**R**](http://www.r-project.org/) : Free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms.
 <br> preferred Version : >= 3.4
 
-* [**JAGS**] Just Another Gibbs Sampler (https://sourceforge.net/projects/mcmc-jags/) : It is a program for the statistical analysis of Bayesian hierarchical models by Markov Chain Monte Carlo.
+* [**JAGS**] Just Another Gibbs Sampler (https://sourceforge.net/projects/mcmc-jags/) : It is a tool for the statistical analysis of Bayesian hierarchical models by Markov Chain Monte Carlo.
 <br> 
 
 ________________________________________________________________
